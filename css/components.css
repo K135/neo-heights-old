@@ -1,0 +1,941 @@
+/* ——— Shared ——— */
+
+.font-nav {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.font-hubballi {
+  font-family: "Hubballi", "Figtree", "Trebuchet MS", sans-serif;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  background: #f68121;
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px 24px;
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.btn-primary .btn-label {
+  padding: 0 8px;
+}
+
+.btn-primary img {
+  width: 24px;
+  height: 24px;
+  transform: scaleX(-1);
+  flex-shrink: 0;
+}
+
+.link-accent {
+  display: inline-flex;
+  align-items: center;
+  color: #f68121;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 16px 0;
+}
+
+.link-accent .link-label {
+  padding: 0 8px;
+}
+
+.link-accent img {
+  width: 24px;
+  height: 24px;
+  transform: scaleX(-1);
+  flex-shrink: 0;
+}
+
+/* Card base */
+
+.card {
+  position: relative;
+  height: 512px;
+  border-radius: 17.46px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-img {
+  background: #f7f7f7;
+}
+
+.card-img img.cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-img.blue-bg {
+  background: linear-gradient(180.65deg, rgb(57, 145, 218) 13.15%, rgb(40, 126, 201) 50.56%);
+}
+
+.card-arrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card-hit {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+}
+
+.card-hit:focus-visible {
+  outline-offset: -4px;
+}
+
+.card-glass {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 106px;
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+  background: rgba(63, 63, 63, 0.3);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+
+.card-glass-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+}
+
+.card-title {
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #fff;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title.upper {
+  text-transform: uppercase;
+}
+
+.card-loc {
+  font-family: "Hubballi", "Figtree", "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-loc.invisible {
+  color: transparent;
+}
+
+.card-text {
+  background: #232323;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 31px 40px;
+  height: 512px;
+}
+
+.card-text.simple {
+  padding: 58px 37px 40px;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.card-text.simple .card-desc {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.card-text-head {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card-text-title {
+  flex: 1;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #fff;
+  min-width: 0;
+}
+
+.badge-area {
+  background: #494949;
+  border-radius: 12px;
+  padding: 12px;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-area.ghost {
+  background: transparent;
+  color: transparent;
+}
+
+.card-desc {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 467px;
+}
+
+.badge-csr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, #0d3896 0%, #4fdaff 100%);
+  border-radius: 0 0 0 14px;
+  padding: 14px;
+  z-index: 3;
+}
+
+.badge-csr span {
+  display: block;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #fff;
+  white-space: nowrap;
+  padding: 7px;
+}
+
+/* Row width helpers — based on 1680px content width */
+
+.w-half {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+}
+
+.w-32 {
+  width: 32.58%;
+}
+
+.w-33 {
+  width: 32.37%;
+}
+
+.w-33b {
+  width: 32.85%;
+}
+
+.w-66 {
+  width: 66.05%;
+}
+
+.w-65 {
+  width: 64.81%;
+}
+
+.w-34 {
+  width: 33.82%;
+}
+
+.w-620 {
+  width: 620px;
+}
+
+.w-1032 {
+  width: 1032px;
+  flex: 1 1 auto;
+}
+
+/* Grid-style rows with consistent 24px gaps */
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.row-split {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.row-split .w-32 {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-split .w-66 {
+  flex: 2 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-3 {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.row-3 .w-33,
+.row-3 .w-33b {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-wide-narrow {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.row-wide-narrow .w-65 {
+  flex: 1.9 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-wide-narrow .w-34 {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-fixed {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+}
+
+.row-fixed .w-620 {
+  width: 620px;
+  flex-shrink: 0;
+}
+
+.row-fixed .w-1032 {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+}
+
+
+/* Card base */
+
+.card {
+  position: relative;
+  height: 512px;
+  border-radius: 17.46px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-img {
+  background: #f7f7f7;
+}
+
+.card-img img.cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-img.blue-bg {
+  background: linear-gradient(180.65deg, rgb(57, 145, 218) 13.15%, rgb(40, 126, 201) 50.56%);
+}
+
+.card-arrow {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card-glass {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-height: 106px;
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+  background: rgba(63, 63, 63, 0.3);
+  backdrop-filter: blur(4.3px);
+  -webkit-backdrop-filter: blur(4.3px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 2;
+}
+
+.card-glass-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  width: 100%;
+}
+
+.card-title {
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #fff;
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title.upper {
+  text-transform: uppercase;
+}
+
+.card-loc {
+  font-family: "Hubballi", "Figtree", "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.9px;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-loc.invisible {
+  color: transparent;
+}
+
+.card-text {
+  background: #232323;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 31px 40px;
+  height: 512px;
+}
+
+.card-text.simple {
+  padding: 58px 37px 40px;
+  justify-content: flex-start;
+  gap: 0;
+}
+
+.card-text.simple .card-desc {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.card-text-head {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card-text-title {
+  flex: 1;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.5;
+  color: #fff;
+  min-width: 0;
+}
+
+.badge-area {
+  background: #494949;
+  border-radius: 12px;
+  padding: 12px;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.badge-area.ghost {
+  background: transparent;
+  color: transparent;
+}
+
+.card-desc {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 467px;
+}
+
+.badge-csr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, #0d3896 0%, #4fdaff 100%);
+  border-radius: 0 0 0 14px;
+  padding: 14px;
+  z-index: 3;
+}
+
+.badge-csr span {
+  display: block;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1;
+  color: #fff;
+  white-space: nowrap;
+  padding: 7px;
+}
+
+/* Row width helpers — based on 1680px content width */
+
+.w-half {
+  flex: 1 1 0;
+  min-width: 0;
+  width: auto;
+}
+
+.w-32 {
+  width: 32.58%;
+}
+
+.w-33 {
+  width: 32.37%;
+}
+
+.w-33b {
+  width: 32.85%;
+}
+
+.w-66 {
+  width: 66.05%;
+}
+
+.w-65 {
+  width: 64.81%;
+}
+
+.w-34 {
+  width: 33.82%;
+}
+
+.w-620 {
+  width: 620px;
+}
+
+.w-1032 {
+  width: 1032px;
+  flex: 1 1 auto;
+}
+
+/* Grid-style rows with consistent 24px gaps */
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.row-split {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.row-split .w-32 {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-split .w-66 {
+  flex: 2 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-3 {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.row-3 .w-33,
+.row-3 .w-33b {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-wide-narrow {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.row-wide-narrow .w-65 {
+  flex: 1.9 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-wide-narrow .w-34 {
+  flex: 1 1 0;
+  width: auto;
+  min-width: 0;
+}
+
+.row-fixed {
+  display: flex;
+  gap: 28px;
+  width: 100%;
+}
+
+.row-fixed .w-620 {
+  width: 620px;
+  flex-shrink: 0;
+}
+
+.row-fixed .w-1032 {
+  flex: 1;
+  width: auto;
+  min-width: 0;
+}
+
+/* ——— Featured Blogs ——— */
+
+.blogs {
+  background: #010101;
+  padding: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 36.72px;
+  width: 100%;
+}
+
+.blogs-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 37.5px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #f9f9ff;
+  max-width: 754px;
+}
+
+.blogs-subtitle {
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #8c8c8c;
+  max-width: 754px;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 16px;
+  height: 743px;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.blog-card {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  min-height: 492px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card img.blog-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.48) 0%,
+    rgba(0, 0, 0, 0.36) 100%
+  );
+  z-index: 1;
+}
+
+.blog-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 32px;
+  gap: 32px;
+}
+
+.blog-top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.blog-cat-wrap {
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.blog-cat {
+  font-family: "Figtree", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.blog-cat-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  border-radius: 9999px;
+}
+
+.blog-heading {
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 20.6px;
+  line-height: 33px;
+  color: #fff;
+}
+
+.blog-know {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 16px;
+}
+
+.blog-know img {
+  width: 26px;
+  height: 26px;
+}
+
+/* ——— CTA ——— */
+
+.cta-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  padding: 110px 0 0;
+  width: 100%;
+  background: #1d1d1d;
+}
+
+.cta {
+  width: 1060px;
+  height: 398px;
+  background: rgba(83, 83, 83, 0.3);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 110px;
+  overflow: hidden;
+}
+
+.cta-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 790px;
+  width: 100%;
+}
+
+.cta-title {
+  font-family: "Fustat", sans-serif;
+  font-weight: 500;
+  font-size: 46.3px;
+  line-height: 56px;
+  color: #fff;
+  text-transform: capitalize;
+  max-width: 521px;
+}
+
+.cta-sub {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  color: #b9b9b9;
+  max-width: 477px;
+  margin-bottom: 24px;
+}
+
+/* ——— Partners ——— */
+
+.partners {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.partners-collage {
+  position: relative;
+  width: 1920px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.partners-collage img {
+  position: absolute;
+  object-fit: cover;
+}
+
+.p-970 {
+  left: 0;
+  top: 0;
+  width: 668px;
+  height: 320px;
+}
+
+.p-974 {
+  left: 669px;
+  top: 28px;
+  width: 282px;
+  height: 279px;
+}
+
+.p-101 {
+  left: 656px;
+  top: 0;
+  width: 1264px;
+  height: 320px;
+  z-index: 0;
+}
+
+.p-973 {
+  left: 983px;
+  top: 34px;
+  width: 254px;
+  height: 252px;
+  z-index: 1;
+}
+
+.p-972 {
+  left: 1275px;
+  top: 33px;
+  width: 256px;
+  height: 253px;
+  z-index: 1;
+}
+
+.p-3-wrap {
+  position: absolute;
+  left: 1574px;
+  top: 148px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-3 {
+  width: 300px;
+  height: 75px;
+  object-fit: cover;
+  border: 1.48px solid #fff;
+}
+
+.p-url {
+  margin-top: 10px;
+  background: #fff;
+  width: 222px;
+  text-align: center;
+  font-family: "Figtree", sans-serif;
+  font-size: 19px;
+  letter-spacing: -0.19px;
+  color: #6b6b6b;
+  line-height: 1.4;
+  padding: 2px 0;
+}
+

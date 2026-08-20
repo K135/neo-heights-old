@@ -1,0 +1,763 @@
+/* ——— Project detail ——— */
+
+.pd-hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Header is fixed + .page padding-top: remaining viewport only */
+  height: calc(100vh - var(--header-height, 96px) - 1px);
+  height: calc(100svh - var(--header-height, 96px) - 1px);
+  height: calc(100dvh - var(--header-height, 96px) - 1px);
+  overflow: hidden;
+}
+
+.pd-hero img.cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pd-hero-bar {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  height: 166px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 40px;
+  background: rgba(63, 63, 63, 0.3);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pd-hero-bar-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+}
+
+.pd-hero-bar-text h1 {
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.pd-hero-bar-text .loc {
+  font-family: "Hubballi", "Figtree", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.92px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.pd-breadcrumb {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  background: #111;
+  border: 1.333px solid rgba(255, 255, 255, 0.05);
+  height: 59px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 63px;
+  font-family: "Fustat", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+  width: 100%;
+}
+
+.pd-breadcrumb a,
+.pd-breadcrumb span {
+  color: #888;
+}
+
+.pd-breadcrumb .sep {
+  color: #2a2a2a;
+}
+
+.pd-breadcrumb .current {
+  color: #c8c8c8;
+}
+
+.pd-body {
+  display: flex;
+  flex-direction: column;
+  gap: 94px;
+  align-items: center;
+  padding: 49px 120px 60px;
+  width: 100%;
+}
+
+.pd-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 76px;
+  width: 100%;
+  max-width: 1681px;
+}
+
+.pd-row {
+  display: flex;
+  gap: 120px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.pd-row.align-center {
+  align-items: center;
+}
+
+.pd-label {
+  width: 294px;
+  flex-shrink: 0;
+  font-family: "Fustat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.pd-value {
+  flex: 1;
+  min-width: 0;
+}
+
+.pd-client-name {
+  font-family: "Fustat", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.pd-client-logo {
+  background: #fff;
+  padding: 0 22px;
+  width: 177px;
+  flex-shrink: 0;
+}
+
+.pd-client-logo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 343 / 220;
+  object-fit: cover;
+}
+
+.pd-desc {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.4;
+  color: #fff;
+  max-width: 1152px;
+}
+
+.pd-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+.pd-tag {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-family: "Fustat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.pd-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1694px;
+}
+
+.pd-stat {
+  background: #222;
+  border: 1.333px solid rgba(255, 255, 255, 0.06);
+  height: 107px;
+  padding: 20px 36px;
+}
+
+.pd-stat strong {
+  display: block;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.pd-stat span {
+  font-family: "Fustat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1.03px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.pd-scope {
+  width: 100%;
+  max-width: 1680px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.pd-scope h2 {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-size: 50.3px;
+  line-height: 62.4px;
+  letter-spacing: -0.8px;
+  color: #fbfbfb;
+}
+
+.pd-scope-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px 15px;
+}
+
+.pd-scope-item {
+  background: #111;
+  border: 1.333px solid rgba(255, 255, 255, 0.05);
+  border-radius: 5.333px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 22px;
+}
+
+.pd-scope-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background: #e8571a;
+  flex-shrink: 0;
+}
+
+.pd-scope-item p {
+  font-family: "Fustat", sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #c8c8c8;
+}
+
+.pd-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 1680px;
+}
+
+.pd-gallery-row {
+  display: flex;
+  gap: 12px;
+}
+
+.pd-gallery-row img {
+  width: calc(50% - 6px);
+  height: 713px;
+  object-fit: cover;
+}
+
+.pd-awards {
+  padding: 60px 120px;
+  width: 100%;
+}
+
+.pd-awards h2 {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-size: 50.3px;
+  line-height: 62.4px;
+  letter-spacing: -0.8px;
+  color: #fbfbfb;
+  margin-bottom: 60px;
+  max-width: 560px;
+}
+
+.pd-award-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 100%;
+  max-width: 1680px;
+}
+
+.pd-award-featured {
+  background: #111;
+  border: 1.33px solid rgba(255, 255, 255, 0.08);
+  border-radius: 5.3px;
+  height: 134px;
+  padding: 23px 30px;
+  position: relative;
+}
+
+.pd-award-featured strong {
+  display: block;
+  font-family: "Fustat", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.pd-award-featured p {
+  font-family: "Fustat", sans-serif;
+  font-size: 17px;
+  color: #888;
+}
+
+.pd-award-featured .year {
+  position: absolute;
+  right: 30px;
+  top: 39px;
+  font-family: "Fustat", sans-serif;
+  font-weight: 800;
+  font-size: 37px;
+  color: #3e3e3e;
+}
+
+.pd-award-row {
+  background: #111;
+  border: 1.33px solid rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  gap: 24px;
+}
+
+.pd-award-row strong {
+  font-family: "Fustat", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  color: #d9d9d9;
+  width: 420px;
+  flex-shrink: 0;
+}
+
+.pd-award-row span {
+  flex: 1;
+  font-family: "Fustat", sans-serif;
+  font-size: 16px;
+  color: #888;
+}
+
+.pd-award-row .arrow {
+  color: #888;
+  font-size: 19px;
+}
+
+.pd-related {
+  padding: 0 120px 80px;
+  width: 100%;
+}
+
+.pd-related-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.pd-related-head h2 {
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-size: 46.3px;
+  line-height: 52.8px;
+  letter-spacing: -2.4px;
+  color: #fff;
+}
+
+.pd-related-track {
+  display: flex;
+  gap: 23px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.pd-rel-card {
+  position: relative;
+  flex-shrink: 0;
+  width: 719px;
+  height: 480px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.pd-rel-card img.cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pd-rel-card .card-glass {
+  min-height: 101px;
+}
+
+.pd-enquire {
+  background: #0d0d0d;
+  padding: 180px 215px 200px;
+  width: 100%;
+}
+
+.pd-enquire-inner {
+  display: flex;
+  gap: 111px;
+  align-items: center;
+}
+
+.pd-enquire-copy {
+  width: 803px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 229px;
+}
+
+.pd-enquire-copy h2 {
+  font-family: "Fustat", sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.pd-enquire-copy .sub {
+  font-family: "Fustat", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 726px;
+}
+
+.pd-form {
+  position: relative;
+  width: 576px;
+  background: #131313;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 33px;
+}
+
+.pd-form::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 471px;
+  height: 531px;
+  background: linear-gradient(90deg, rgba(255, 131, 43, 0.2), rgba(246, 129, 33, 0.2));
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pd-form > * {
+  position: relative;
+  z-index: 1;
+}
+
+.pd-form h3 {
+  font-family: "Fustat", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.56px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.pd-form .hint {
+  font-family: "Fustat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 24px;
+}
+
+.pd-form .hint a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.pd-form input,
+.pd-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 12px 16px;
+  color: #fff;
+  font-family: "Fustat", sans-serif;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.pd-form textarea {
+  min-height: 122px;
+  resize: vertical;
+}
+
+.pd-form input::placeholder,
+.pd-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.pd-faq {
+  background: #1d1d1d;
+  padding: 120px 215px;
+  width: 100%;
+  text-align: center;
+}
+
+.pd-faq .eyebrow {
+  font-family: "Fustat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #909090;
+  margin-bottom: 24px;
+}
+
+.pd-faq h2 {
+  font-family: "Fustat", sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.pd-faq-list {
+  max-width: 792px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.pd-faq-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 24px;
+}
+
+.pd-faq-item summary {
+  font-family: "Fustat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  cursor: pointer;
+  list-style: none;
+}
+
+.pd-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.pd-faq-item p {
+  font-family: "Fustat", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 16px;
+}
+
+@media (max-width: 1440px) {
+  .pd-body,
+  .pd-awards,
+  .pd-related {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .pd-row,
+  .pd-enquire-inner {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .pd-hero {
+    height: calc(100vh - var(--header-height, 96px) - 1px);
+    height: calc(100svh - var(--header-height, 96px) - 1px);
+    height: calc(100dvh - var(--header-height, 96px) - 1px);
+  }
+
+  .pd-gallery-row {
+    flex-direction: column;
+  }
+
+  .pd-gallery-row img {
+    width: 100%;
+    height: 420px;
+  }
+
+  .pd-scope-grid,
+  .pd-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .pd-enquire,
+  .pd-faq {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .pd-enquire-copy,
+  .pd-form {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .pd-hero {
+    height: calc(100vh - var(--header-height, 72px) - 1px) !important;
+    height: calc(100svh - var(--header-height, 72px) - 1px) !important;
+    height: calc(100dvh - var(--header-height, 72px) - 1px) !important;
+    min-height: 0;
+    padding: 0 !important;
+  }
+
+  .pd-hero img.cover {
+    position: absolute;
+    min-height: 0;
+  }
+
+  .pd-hero-bar {
+    position: relative;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .pd-hero-bar-text h1 {
+    font-size: clamp(24px, 7vw, 32px) !important;
+    line-height: 1.2;
+  }
+
+  .pd-hero-bar-text .loc {
+    font-size: 14px;
+  }
+
+  .pd-hero-bar .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pd-breadcrumb {
+    height: auto;
+    min-height: 48px;
+    flex-wrap: wrap;
+    padding: 12px 16px;
+    gap: 6px;
+    font-size: 13px;
+  }
+
+  .pd-meta, .pd-stats, .pd-scope-grid, .pd-gallery {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .pd-stat, .pd-scope-item, .pd-gallery img {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .pd-enquire, .pd-faq {
+    padding: 48px 16px !important;
+    flex-direction: column !important;
+    display: flex !important;
+    gap: 28px;
+  }
+
+  .pd-enquire-copy, .pd-form {
+    width: 100% !important;
+  }
+
+  .pd-body,
+  .pd-meta {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pd-row,
+  .pd-row.align-center {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+  }
+
+  .pd-label {
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  .pd-value {
+    width: 100%;
+  }
+
+  .pd-client-name {
+    font-size: clamp(22px, 6vw, 28px) !important;
+  }
+
+  .pd-client-logo {
+    width: min(177px, 50vw);
+    margin-top: 8px;
+  }
+
+  .pd-desc {
+    font-size: clamp(18px, 5vw, 24px) !important;
+    line-height: 1.4 !important;
+  }
+
+  .blogs {
+    padding: 48px 16px !important;
+  }
+
+  .blog-cards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .blog-card {
+    height: 400px;
+  }
+}

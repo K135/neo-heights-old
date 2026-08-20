@@ -1,0 +1,186 @@
+/* Shared responsive layout rules for all pages */
+
+@media (max-width: 1100px) {
+  .page {
+    max-width: 100%;
+  }
+
+  .cta-wrap,
+  .cta,
+  .partners,
+  .blogs,
+  .home-trusted-inner,
+  .home-about,
+  .home-services,
+  .home-projects,
+  .home-clients,
+  .home-legacy,
+  .home-team,
+  .home-contact-grid,
+  .home-brand,
+  .home-faq {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .footer-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .hero,
+  .terms-hero,
+  .ct-hero,
+  .ab-hero {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .blog-cards,
+  .home-stats,
+  .home-team-grid,
+  .project-grid .row,
+  .project-grid .row-split,
+  .project-grid .row-3,
+  .project-grid .row-wide-narrow,
+  .project-grid .row-fixed {
+    flex-direction: column !important;
+    display: flex !important;
+    gap: 24px !important;
+  }
+
+  .card,
+  .w-half,
+  .w-32,
+  .w-66,
+  .w-33,
+  .w-33b,
+  .w-65,
+  .w-34,
+  .w-620,
+  .w-1032 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .hero-title,
+  .ct-title,
+  .terms-title,
+  .home-hero-title {
+    font-size: clamp(32px, 8vw, 48px) !important;
+    letter-spacing: -1px !important;
+  }
+
+  .home-hero {
+    height: 100vh !important;
+    height: 100svh !important;
+    height: 100dvh !important;
+    min-height: 100svh !important;
+  }
+
+  .home-hero-inner {
+    position: absolute !important;
+    top: 0 !important;
+    height: 100% !important;
+    padding: 120px 24px 88px !important;
+    gap: 40px !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  .home-verticals {
+    display: none !important;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .filter {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .partners-collage {
+    transform: scale(0.42);
+    transform-origin: left top;
+    width: 1920px;
+  }
+
+  .partners {
+    overflow: hidden;
+    height: 220px;
+  }
+
+  .cta {
+    width: calc(100% - 32px) !important;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: auto !important;
+    padding: 48px 24px !important;
+  }
+
+  .cta-title {
+    font-size: clamp(26px, 7vw, 36px) !important;
+  }
+
+  .enquire {
+    padding: 64px 20px 80px !important;
+    overflow-x: clip;
+  }
+
+  .enquire-row {
+    flex-direction: column !important;
+    gap: 40px !important;
+    width: 100%;
+  }
+
+  .enquire-left,
+  .enquire-sub,
+  .enquire-title,
+  .enquire-form-wrap,
+  .enquire-form,
+  .enquire-fields {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  .enquire-left {
+    gap: 32px !important;
+  }
+
+  .enquire-title {
+    font-size: clamp(28px, 7vw, 40px) !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+}

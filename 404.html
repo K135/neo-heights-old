@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page not found — Neo Heights</title>
+  <meta name="description" content="The page you requested could not be found." />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" href="assets/shared/favicon.ico" sizes="any" />
+  <link rel="stylesheet" href="css/main.css?v=4" />
+  <style>
+    .nf {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 20px;
+      padding: 120px 80px;
+      background: #111;
+      color: #fff;
+    }
+    .nf h1 { font-size: clamp(40px, 6vw, 72px); }
+    .nf p { color: rgba(255,255,255,0.65); max-width: 520px; font-size: 18px; line-height: 1.6; }
+    @media (max-width: 768px) { .nf { padding: 100px 24px; } }
+  </style>
+</head>
+<body data-root="">
+  <div class="page">
+    <div data-nh-header></div>
+    <section class="nf" id="main">
+      <p class="home-eyebrow" style="letter-spacing:3px;text-transform:uppercase;color:#909090">404</p>
+      <h1>Page not found</h1>
+      <p>The page you’re looking for doesn’t exist or may have moved. Head back home or contact our team.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="btn-primary" href="index.html"><span class="btn-label">Back to Home</span></a>
+        <a class="btn-primary" href="contact.html" style="background:transparent;border:1px solid #687781"><span class="btn-label">Contact</span></a>
+      </div>
+    </section>
+    <div data-nh-footer></div>
+  </div>
+  <script src="js/chrome.js?v=2"></script>
+  <script src="js/site.js?v=3"></script>
+  <script>NH.mount("404.html");</script>
+</body>
+</html>

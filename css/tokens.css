@@ -1,0 +1,40 @@
+/* Neo Heights design tokens */
+:root {
+  --bg-page: #1d1d1d;
+  --bg-body: #0a0a0a;
+  --bg-footer: #171717;
+  --bg-black: #010101;
+  --bg-elevated: #121212;
+  --accent: #f68121;
+  --accent-dark: #e17100;
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-grey: #8c8c8c;
+  --text-secondary: #a1a1a1;
+  --text-footer: #d4d4d4;
+  --border: #262626;
+  --radius-btn: 12px;
+  --radius-card: 17.46px;
+  --font-body: "Fustat", system-ui, sans-serif;
+  --font-nav: Futura, "Trebuchet MS", Arial, sans-serif;
+  --font-hubballi: "Hubballi", "Figtree", "Trebuchet MS", sans-serif;
+  --max-page: 1920px;
+  --page-pad: 120px;
+  --bp-tablet: 1100px;
+  --bp-mobile: 768px;
+  --bp-phone: 390px;
+}
+
+html[data-theme="light"] {
+  --bg-page: #f5f5f5;
+  --bg-body: #ffffff;
+  --bg-footer: #f0f0f0;
+  --bg-black: #ffffff;
+  --bg-elevated: #ffffff;
+  --text: #111111;
+  --text-muted: rgba(0, 0, 0, 0.6);
+  --text-grey: #71717a;
+  --text-secondary: #525252;
+  --text-footer: #333333;
+  --border: #e5e5e5;
+}
